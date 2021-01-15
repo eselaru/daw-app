@@ -1,0 +1,20 @@
+<div class="page">
+  <div class="page-content">
+      <h1>Dictionar</h1>
+      <p></p>
+      <h3>Nu cunosti ingredientele unui medicament? Suntem aici sa te ajutam!</h3>
+      <h3>Cauta in dictionarul nostru ingredientul misterios pentru mai multe detalii!</h3>
+      <div *ngFor="let word of words" class="word-list">
+          <div class="dictionary">
+              <div class="dictionary-content">
+                  <h4>
+                      <fa-icon class="fa-icon" [icon]="faAngleDoubleRight"></fa-icon>
+                      {{word.word}}
+                  </h4>
+                  <p>{{word.explanation}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>

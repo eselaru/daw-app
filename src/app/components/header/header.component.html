@@ -1,0 +1,41 @@
+<div class="top_menu">
+  <div>
+    <a href="" [routerLink]="'/home'">
+      <img src="../../../assets/images/logo.png" />
+    </a>
+    <span class="name">
+      Farmacia Uni
+    </span>
+  </div>
+
+  <div class="search_bar">
+    <input type="text" placeholder="Search.." />
+    <a href="#" class="button_search">
+      <fa-icon class="fa-icon" [icon]="faSearch"></fa-icon>
+    </a>
+  </div>
+</div>
+
+<div class="menu_buttons">
+  <div class="btn-group" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+      aria-controls="dropdown-basic">
+      <fa-icon class="fa-icon" [icon]="faBars"></fa-icon>
+      <span> Produse </span>
+      <span class="caret"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+      <li role="menuitem"><a class="dropdown-item" href="#">Vitamine</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Sirop</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Ceaiuri</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Produse de ingrijire</a></li>
+    </ul>
+  </div>
+
+  <a href="#" [routerLink]="'/dictionary'">Dictionar</a>
+  <a href="#" [routerLink]="'/about'">About</a>
+  <a href="#" [routerLink]="'/contact'">Contact</a>
+  <a href="#">
+    <fa-icon class="fa-icon" [icon]="faShoppingCart"></fa-icon>
+  </a>
+</div>

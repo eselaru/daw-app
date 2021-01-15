@@ -1,0 +1,41 @@
+@import '../../../assets/styles/_colors';
+
+.footer {
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 25%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+
+    background-color: $app-lighter-blue;
+    color: $base-white;
+    border-top: 5px white dotted;
+  }
+
+.social {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+a {
+  font-size: 23px;
+  color: $base-white;
+  text-decoration: none;
+}
+
+.mt-20{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer-container{
+  margin: 0 160px;
+  padding-top: 10px;
+}
